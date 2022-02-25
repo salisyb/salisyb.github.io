@@ -12,35 +12,32 @@
   <link href="notstatic/css/index.css" rel="stylesheet">
   <title>Salisu Abubakar</title>
   <style>
-
-    .eye {
-      height: 16px;
-      padding-inline: 20px;
-      padding-block: 10px;
-      border-radius: 8px;
-      font-size: 16px;
+    @media screen and (min-width: 480 ) {
+      .line {
+        width: 250px;
+      }
     }
-    .eyeState {
-      position: relative;
-      right: 20px;
-      color:red;
-    }
-
   </style>
 </head>
+
 <body>
 
-    <h1>Hello World</h1>
-    <div>
-      <input id="eye" class="eye" type="password" placeholder="type password"/>
-      <span class="eyeState" id="eyeState" onclick="toggleEye()">0</span>
-    </div>
-    <script>
-      function toggleEye() {
-        let state = document.getElementById('eye');
-        state.setAttribute('type', state.getAttribute('type') === 'password' ? 'text' : 'password')
+  <div class="w3-display-middle">
+    <h1>WELCOME MY NAME IS</h1>
+    <h2>SALISU ABUBAKAR</h2>
+    <h3 class="material-icons-outlined">
+      you can contact me on
+    </h3>
+    <div class="line">
 
-      }
-    </script>
+    </div>
+    <ul class="social-icons">
+      <li><a href="http://www.facebook.com/salisyb"><img src='images/socialmedia/facebook.png' /></a></li>
+      <li><a href="http://www.twitter.com/salisyb"><img src='images/socialmedia/twitter.png' /></a></li>
+      <li><a href="http://www.instagram.com/salisyb"><img src='images/socialmedia/instagram.png' /></a></li>
+    </ul>
+  </div>
+
 </body>
+
 </html>
